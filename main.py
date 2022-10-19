@@ -21,3 +21,5 @@ with open(filename, "wb") as file:
     server.retrbinary(f"RETR {filename}", file.write)
 
 server.dir()
+
+server.quit()
